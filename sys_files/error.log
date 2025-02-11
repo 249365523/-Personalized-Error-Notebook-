@@ -1,0 +1,71 @@
+2025-01-08 10:18:22,571 - ERROR - 异常发生: [Errno 2] No such file or directory: 'cach/word/20232211K4.docx'
+Traceback (most recent call last):
+  File "title_practice_beta0.37.py", line 177, in wrapper
+    return func(*args, **kwargs)
+  File "title_practice_beta0.37.py", line 1635, in docx_add
+    target_doc2,title_option_changes=change_option(title,title_option_changes)
+  File "title_practice_beta0.37.py", line 1625, in change_option
+    doc_for_pic.save(r"cach/word/%s.docx"%title)
+  File "docx\document.py", line 151, in save
+  File "docx\parts\document.py", line 106, in save
+  File "docx\opc\package.py", line 151, in save
+  File "docx\opc\pkgwriter.py", line 27, in write
+  File "docx\opc\phys_pkg.py", line 109, in __init__
+  File "zipfile.py", line 1240, in __init__
+FileNotFoundError: [Errno 2] No such file or directory: 'cach/word/20232211K4.docx'
+2025-01-08 10:18:28,194 - ERROR - 异常发生: [Errno 2] No such file or directory: 'cach/word/20232211K5.docx'
+Traceback (most recent call last):
+  File "title_practice_beta0.37.py", line 177, in wrapper
+    return func(*args, **kwargs)
+  File "title_practice_beta0.37.py", line 1635, in docx_add
+    target_doc2,title_option_changes=change_option(title,title_option_changes)
+  File "title_practice_beta0.37.py", line 1625, in change_option
+    doc_for_pic.save(r"cach/word/%s.docx"%title)
+  File "docx\document.py", line 151, in save
+  File "docx\parts\document.py", line 106, in save
+  File "docx\opc\package.py", line 151, in save
+  File "docx\opc\pkgwriter.py", line 27, in write
+  File "docx\opc\phys_pkg.py", line 109, in __init__
+  File "zipfile.py", line 1240, in __init__
+FileNotFoundError: [Errno 2] No such file or directory: 'cach/word/20232211K5.docx'
+2025-01-08 10:18:35,057 - ERROR - 异常发生: [Errno 2] No such file or directory: 'cach/word/2023222Z11L1.docx'
+Traceback (most recent call last):
+  File "title_practice_beta0.37.py", line 177, in wrapper
+    return func(*args, **kwargs)
+  File "title_practice_beta0.37.py", line 1635, in docx_add
+    target_doc2,title_option_changes=change_option(title,title_option_changes)
+  File "title_practice_beta0.37.py", line 1625, in change_option
+    doc_for_pic.save(r"cach/word/%s.docx"%title)
+  File "docx\document.py", line 151, in save
+  File "docx\parts\document.py", line 106, in save
+  File "docx\opc\package.py", line 151, in save
+  File "docx\opc\pkgwriter.py", line 27, in write
+  File "docx\opc\phys_pkg.py", line 109, in __init__
+  File "zipfile.py", line 1240, in __init__
+FileNotFoundError: [Errno 2] No such file or directory: 'cach/word/2023222Z11L1.docx'
+2025-01-10 10:21:00,731 - ERROR - 异常发生: Package not found at 'word题目汇总\20232025011T1.docx'
+Traceback (most recent call last):
+  File "title_practice_beta0.37.py", line 177, in wrapper
+    return func(*args, **kwargs)
+  File "title_practice_beta0.37.py", line 1635, in docx_add
+    target_doc2,title_option_changes=change_option(title,title_option_changes)
+  File "title_practice_beta0.37.py", line 1481, in change_option
+    target_doc_old=Document(r"word题目汇总\%s.docx" % title)
+  File "docx\api.py", line 23, in Document
+  File "docx\opc\package.py", line 116, in open
+  File "docx\opc\pkgreader.py", line 22, in from_file
+  File "docx\opc\phys_pkg.py", line 21, in __new__
+docx.opc.exceptions.PackageNotFoundError: Package not found at 'word题目汇总\20232025011T1.docx'
+2025-01-10 10:21:25,877 - ERROR - 异常发生: Package not found at 'word题目汇总\20232025011T3.docx'
+Traceback (most recent call last):
+  File "title_practice_beta0.37.py", line 177, in wrapper
+    return func(*args, **kwargs)
+  File "title_practice_beta0.37.py", line 1635, in docx_add
+    target_doc2,title_option_changes=change_option(title,title_option_changes)
+  File "title_practice_beta0.37.py", line 1481, in change_option
+    target_doc_old=Document(r"word题目汇总\%s.docx" % title)
+  File "docx\api.py", line 23, in Document
+  File "docx\opc\package.py", line 116, in open
+  File "docx\opc\pkgreader.py", line 22, in from_file
+  File "docx\opc\phys_pkg.py", line 21, in __new__
+docx.opc.exceptions.PackageNotFoundError: Package not found at 'word题目汇总\20232025011T3.docx'

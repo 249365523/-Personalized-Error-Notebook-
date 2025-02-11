@@ -1,0 +1,60 @@
+0/在进行第三方库更新时，无法用pip更新，可以用pip uninstall xxx 命令卸载旧版本，再安装新版本。
+
+1/下载的安装包安装方法2019/5/30
+在Git上下载包对应的工程，直接下载并解压。如果是windows系统，在解压目录下，按住Shift的同时在空白处单击右键，调出菜单，此时菜单中会出现【在此处打开命令窗口】的选项，打开。在弹出的命令窗口中输入：python setup.py install
+
+2/安装软件后如何进行基本设置
+
+3.安装anaconda后需要设置环境变量,Path的值设置为C:\Users\Administrator\Anaconda3 此为默认安装路径
+
+4.pip install 在cmd中安装时是在cmd默认目录下进行，而非在python目录下进行
+5.docx模块安装的方法在cmd中输入  pip install python-docx
+
+6.新成员加入时需要在题目筛选中更新新成员名单。（单次和汇总）
+
+pip install -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com pandas
+pip install -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com python-pptx
+pip install -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com Spire.Doc
+pip install -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com Matplotlib
+
+0/在进行第三方库更新时，无法用pip更新，可以用pip uninstall xxx 命令卸载旧版本，再安装新版本。
+
+1/下载的安装包安装方法2019/5/30
+在Git上下载包对应的工程，直接下载并解压。如果是windows系统，在解压目录下，按住Shift的同时在空白处单击右键，调出菜单，此时菜单中会出现【在此处打开命令窗口】的选项，打开。在弹出的命令窗口中输入：python setup.py install
+安装python版本最好3.6.8，不要太新，会出现很多问题。
+配合虚拟环境打包
+
+2/安装软件后如何进行基本设置
+
+3.安装python3.8.7后需要设置环境变量，方法为我的电脑--属性--高级系统设置--环境变量--系统变量--Path(双击）--新建--python安装路径
+如果要使用pip安装第三方库，在环境变量中要新建 --python安装路径\Scripts
+安装anaconda后需要设置环境变量,Path的值设置为C:\Users\Administrator\Anaconda3 此为默认安装路径
+默认安装地址 C:\Users\Administrator\AppData\Local\Programs\Python\Python311
+
+4.pip install 在cmd中安装时是在cmd默认目录下进行，而非在python目录下进行。
+需要在环境目录中添加 C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Scripts
+如果是anaconda，需要在环境目录中添加C:\Users\Administrator\Anaconda3\Scripts
+pycharm中需要更改环境变量 C:\Users\Administrator\AppData\Local\Programs\Python\Python311\python.exe配置cmd中下载的第三方库
+pycharm中无法识别安装的第三方库 需要在setting设置，python interpreter, add interpreter 添加python的真实安装路径，可以通过搜索python.exe查找。比如C:\Users\Administrator\AppData\Local\Programs\Python\Python37，
+
+
+5.docx模块安装的方法在cmd中输入  pip install python-docx
+
+6.新成员加入时需要在题目筛选中更新新成员名单。（单次和汇总）
+
+7.封装：，先安装pyinstller ,再至方件夹下cmd跳转，输入以下代码，完成封装，注意封装时尽量新建一个文件夹备用
+封装路径   pyinstaller -F -w --icon=“E:\题不二错测试各版本备份\题不二错测试版1.12\sys_files\pikaqiu.ico” title_practice_beta0.37.3.py -n 题不二错测试版1.12
+pyinstaller -D -w --icon=“F:\题不二错测试\pikaqiu.ico” title_practice_beta0.30.py -n 题不二错测试版1.3
+pyinstaller -F -w --icon=“F:\title practice\pikaqiu.ico” demo.py
+
+8.更改镜像源 
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --upgrade pip
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pandas
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pyinstaller
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple python-docx
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple openpyxl
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple docxcompose
+pip install -i http://mirrors.aliyun.com/pypi/simple/
+pip install -i http://mirrors.aliyun.com/pypi/simple/ docxcompose
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple xlrd==1.2.0
+9.如果安装python-docx不成功，可能是因为lxml版本不合适，需要安装lxml版本。也可能是需要C++编译，
